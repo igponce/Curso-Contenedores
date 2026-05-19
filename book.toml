@@ -1,0 +1,12 @@
+[book]
+title = "Arquitecturas Transaccionales - Contenedores y Microservicios"
+authors = ["Inigo González"]
+language = "es"
+m
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
+[output]
+
+[output.html]
+additional-js = ["mermaid.min.js", "mermaid-init.js"]
