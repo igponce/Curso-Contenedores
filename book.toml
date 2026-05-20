@@ -2,7 +2,6 @@
 title = "Arquitecturas Transaccionales - Contenedores y Microservicios"
 authors = ["Inigo González"]
 language = "es"
-m
 [preprocessor.mermaid]
 command = "mdbook-mermaid"
 
