@@ -9,6 +9,8 @@ Actualmente el kernel de Linux de cualquier  distribución soporta contenedores;
 # Ejecución de contenedores
 
 ```bash
-$ docker run helloworld
+$ docker run hello-world
 ```
-Esto ejecuta el contenedor "helloworld".
+Esto ejecuta el contenedor cuya imagen se llama "hello-world".
+
+Si el contenedor no existe en nuestro sistema tendremos que bajarlo de docker hub.

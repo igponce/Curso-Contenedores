@@ -18,4 +18,5 @@ timeline
 - 4.3BSD chroot: Mecanismo de aislamiento de procesos que cambia el directorio raíz de un proceso, limitando su vista del sistema de archivos. Se implementa con la llamada al sistema [chroot(2)](https://man.netbsd.org/chroot.2)
 
 - Solaris Zones: (originalmente Solaris Containers) Sistema de  virtualización a nivel del sistema operativo que permote crear entornos seguros y aislados entre sí (zonas) dentro de un mismo host.
+
 - Union mount: método que permite superponer varios sistemas de archivos en una única jerarquía, de modo que el contenido de cada capa aparece como un solo árbol.

@@ -1,5 +1,8 @@
 # Container internals
 
+¿Qué ocurre cuando ejecutamos `docker run`?
+
+
 ## Arranque de un contenedor paso a paso
 
 1. **Creación del proceso**: El comando [`docker run`]() (o `podman run`) crea un nuevo proceso en el host que actuará como proceso init del contenedor.
@@ -13,6 +16,8 @@ Algunos identificadores como el PID de los procesos son globales en el host; per
 4. **Montaje del sistema de archivos raíz**: Se monta la capa de lectura‑solo de la imagen del contenedor y, si corresponde, una capa writable (overlayFS) que forma el **rootfs** del contenedor.
 
 5. **Cambiar la raíz (pivot_root / chroot)**: El proceso cambia su raíz al nuevo `rootfs` mediante `pivot_root` (o `chroot`), de modo que todo el árbol de directorios que ve corresponde al contenedor.
+
+**IMPORTANTE** el contenedor puede escribir dentro del sistema de archivos **PERO** los cambios no son permanentes. Al reiniciar el contenedor se vuelve al estado inicial.
 
 6. **Configuración de la red**: Se crea una interfaz de red virtual y se la conecta a un bridge o a otro tipo de red configurada por Docker. Se asigna una dirección IP al contenedor.
 
