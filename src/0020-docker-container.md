@@ -1,4 +1,4 @@
-# Docker containers
+ # Docker containers
 
 Docker (2013) originalmente necesitaba un kernel de Linux específico. Por defecto los kernels estándar no disponían de todas las caracteristicas que necesitaba docker, como overlayFS.
 
