@@ -36,24 +36,12 @@
 
 - [Container Images](0200-Container-images.md)
 - [Creación de imagenes (Dockerfile)](0210-Dockerfile.md)
-- [Optimización de contenedores]()
-- [Multi-stage build]()
+- [Optimización de contenedores](0220-optimizacion-contenedores.md)
+- [Docker-compose](0230-docker-compose.md)
 
-# Orquestación de contenedores
-
-- [Porqué orquestar contenedores]()
-- [Arquitectura]()
-- [Microservicios]()
-- [Docker-compose]()
-- [Configuración y orquestación]()
-
-## Kubernetes
-
-## Kamal
 
 # Casos prácticos
 ## Creación de contenedores
-- [Aplicación Python FLASK]()
-## Orquestación de contenedores
-- [Repositorio de código Gitea]()
-- [Blog Wordpress]()
+- [Repositorio de código Gitea](1510-gitea.md)
+- [Orquestador n8n](1520-n8n.md)
+- [Servidor MCP](1500-servidor-mcp.md)

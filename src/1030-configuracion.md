@@ -68,20 +68,9 @@ Los secrets son datos gestionados por Docker y que se montan como ficheros duran
 Es mejor usar secrets que variables de entorno porque los secrets no aparecen en los logs; sin embargo una variable de entorno sí puede aparecer.
 Las variables de entorno se pueden consultar fácilmente desde cualquier proceso.
 
-Los secrets sólo están soportados en **docker swarm** (gestión de cluster de contenedores de docker).
-
 Para crear el secret utilizamos el comando `docker secret create` 
 ```
 echo "sk-AAS....." | docker secret create OPENAI_API_KEY -
 ```
 
-Al ejecutar docker especificamos el / los secrets que queremos usar en el contenedor:
-```
-docker run --secret OPENAI_API_KEY <<app_image>>
-```
-El secret estará disponible dentro del contenedor en `/run/secrets/OPENAI_API_KEY`.
-
-También podemos montar el secret en un lugar del sistema de archivos:
-```
-docker run --secret source=OPENAI_API_KEY:target=/path/del/secret <<app_image>>
-```
+Para usar los secrets necesitamos [docker-compose](0230-docker-compose.md)

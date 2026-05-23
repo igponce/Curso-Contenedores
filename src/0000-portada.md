@@ -1,5 +1,8 @@
 # Arquitecturas Transaccionales
 ## Contenedores y Microservicios
 
-![]() Mbit School
-Promoción Marzo 2025
+![](img/mbit-logo.svg)
+
+Mbit School
+
+[https://github.com/igponce/Curso-Contenedores](https://github.com/igponce/Curso-Contenedores)
