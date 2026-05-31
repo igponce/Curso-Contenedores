@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1600 1000" style="enable-background:new 0 0 1600 1000;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#2A3F3F;}
+</style>
+<g>
+	<path class="st0" d="M400,400H300c-55.23,0-100-44.77-100-100l0,0c0-55.23,44.77-100,100-100l0,0c55.23,0,100,44.77,100,100V400z"
+		/>
+	<path class="st0" d="M800,400H600V300c0-55.23,44.77-100,100-100l0,0c55.23,0,100,44.77,100,100V400z"/>
+	<path class="st0" d="M1200,400h-200V300c0-55.23,44.77-100,100-100l0,0c55.23,0,100,44.77,100,100V400z"/>
+	<path class="st0" d="M500,800L500,800c-55.23,0-100-44.77-100-100V400h200v300C600,755.23,555.23,800,500,800z"/>
+	<path class="st0" d="M900,800L900,800c-55.23,0-100-44.77-100-100V400h200v300C1000,755.23,955.23,800,900,800z"/>
+	<path class="st0" d="M1300,800L1300,800c-55.23,0-100-44.77-100-100V400h100c55.23,0,100,44.77,100,100v200
+		C1400,755.23,1355.23,800,1300,800z"/>
+</g>
+</svg>

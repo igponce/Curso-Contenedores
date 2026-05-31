@@ -45,3 +45,9 @@
 - [Repositorio de código Gitea](1510-gitea.md)
 - [Orquestador n8n](1520-n8n.md)
 - [Servidor MCP](1500-servidor-mcp.md)
+
+# SESION 3
+## Kubernetes
+
+- [Orquestación antes de K8s](2000-orquestacion-contenedores.md)
+- [Arquitectura](2010-arquitectura-k8s.ms)
