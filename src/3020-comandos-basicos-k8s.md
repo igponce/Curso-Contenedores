@@ -148,17 +148,25 @@ Crear un namespace:
 kubectl create namespace mbit
 ``` 
 
-## 1.6 Contextos y kubeconfig (10 min) 🆕
+## Contextos y kubecondfig
 
-| Sub-tema | Detalle | Tiempo |
-|---|---|---|
-| ¿Qué es un contexto? | Cluster + usuario + namespace. Todo en uno | 3 min |
-| El archivo `~/.kube/config` | Estructura: clusters, users, contexts | 3 min |
-| `kubectx` | Cambiar entre local (minikube) y AWS (EKS) | 2 min |
-| Caso práctico | Alternar entre cluster de desarrollo local y cluster de producción en AWS | 2 min |
+### ¿Qué es un contexto?
 
+Contexto = Cluster + usuario + namespace.
 
----
-# Referencias
-- [Kubernetes Components — Documentación oficial](https://kubernetes.io/docs/concepts/overview/components/)
-- [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+Imagina que trabajas en un proyecto con más de un cluster.
+
+Por ejemplo, tienes un cluster de desarrollo local (minikube) y un cluster de producción en AWS (EKS).
+
+Para ejecutar comandos tendrías que especificar cada vez el cluster, el usuario con el que te conectas y el namespace donde quieres aplicarlo.
+
+```bash
+$ kubectl config get-contexts
+CURRENT NAME                 CLUSTER   AUTHINFO   NAMESPACE
+*   minikube             minikube  minikube   default
+    eks-prod             eks-prod  eks-prod   default
+```
+
+Para cambiar de un contexto a otro: `kubectl config use-context <<nombre_contexto>>`
+
+La información de clusters, usuarios, y contextos se almacena en el archivo `~/.kube/config`.
