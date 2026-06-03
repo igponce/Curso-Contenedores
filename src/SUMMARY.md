@@ -3,28 +3,25 @@
 
 # SESION 1
 
-## Antes de empezar: Instalación de docker
+# Antes de empezar: Instalación de docker
 - [Instalación](0100-docker-install.md)
 - [Prueba de instalación](0120-docker-simple.md)
 - [Troubleshooting](0130-troubleshooting.md)
 
-## Contenedores
+# Contenedores
 - [¿Porqué contenedores?](0005-why-containers.md)
 - [Modelo de desarrollo](0006-modelo-desarrollo.md)
 - [Modelo de distribución](0007-modelo-distribución.md)
 
-## Contenedores por dentro
+# Contenedores por dentro
 - [De dónde vienen los contenedores](0010-containers.md)
   - [Maquinas virtuales](0011-virtual-machines.md)
   - [chroot](0011-chroot.md)
-  - [union mount]()
-  - [Solaris Zones/Containers]()
 - [Docker container](0020-docker-container.md)
 - [Container internals](0030-container-internals.md)
 - [Container package](0040-container-package.md)
 
-
-## Ejecución y operación de contenedores
+# Ejecución y operación de contenedores
 
 - [Ejecución de un contenedor](1000-ejecucion-contenedores.md)
 - [Redes y contenedores](1010-networking.md)
@@ -32,7 +29,7 @@
 - [Configuración](1030-configuracion.md)
 
 # SESION 2
-## Creación de contenedores
+# Creación de contenedores
 
 - [Container Images](0200-Container-images.md)
 - [Creación de imagenes (Dockerfile)](0210-Dockerfile.md)
@@ -46,6 +43,8 @@
 - [De docker-compose a Kubernetes](3000-introduccion-kubernetes.md)
 - [Arquitectura de Kubernetes](3010-arquitectura-k8s.md)
 - [Comandos básicos de Kubernetes](3020-comandos-basicos-k8s.md)
+
+# Creación de recursos
 - [Pods - creación y definición](3100-kubernetes-pods.md)
 - [Pods - probes](3110-kubernetes-pods-probes.md)
 - [Pods - puertos](3120-kubernetes-pods-ports.md)
@@ -53,8 +52,8 @@
 
 # Sesión 4 
 ## Kubernetes: configuración
-- Secrets
-- ConfigMaps
+- [Volúmenes y almacenamiento](3140-kubernetes-volumes.md)
+- [Secrets y configuración](3200-kubernetes-secrets-configmaps.md)
 
 # Casos prácticos
 ## Creación de contenedores
@@ -62,3 +61,6 @@
 - [Orquestador n8n](1520-n8n.md)
   - [Ejercicio resuelto](ejercicios_resueltos/n8n/README.md)
 - [Servidor MCP](1500-servidor-mcp.md)
+
+# Kubernetes
+- [Creación de cluster](ejercicios_resueltos\cluster_k8s_kind\README.md)
