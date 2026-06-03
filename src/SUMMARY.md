@@ -39,15 +39,26 @@
 - [Optimización de contenedores](0220-optimizacion-contenedores.md)
 - [Docker-compose](0230-docker-compose.md)
 
+# SESION 3
+
+## Kubernetes
+
+- [De docker-compose a Kubernetes](3000-introduccion-kubernetes.md)
+- [Arquitectura de Kubernetes](3010-arquitectura-k8s.md)
+- [Comandos básicos de Kubernetes](3020-comandos-basicos-k8s.md)
+- [Pods - creación y definición](3100-kubernetes-pods.md)
+- [Pods - probes](3110-kubernetes-pods-probes.md)
+- [Pods - puertos](3120-kubernetes-pods-ports.md)
+- [Pods - límites](3130-kubernetes-pods-limits.md)
+
+# Sesión 4 
+## Kubernetes: configuración
+- Secrets
+- ConfigMaps
 
 # Casos prácticos
 ## Creación de contenedores
 - [Repositorio de código Gitea](1510-gitea.md)
 - [Orquestador n8n](1520-n8n.md)
+  - [Ejercicio resuelto](ejercicios_resueltos/n8n/README.md)
 - [Servidor MCP](1500-servidor-mcp.md)
-
-# SESION 3
-## Kubernetes
-
-- [Orquestación antes de K8s](2000-orquestacion-contenedores.md)
-- [Arquitectura](2010-arquitectura-k8s.ms)
