@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: proxy-manifest
+spec:
+  containers:
+    - name: proxy
+      image: nginx
