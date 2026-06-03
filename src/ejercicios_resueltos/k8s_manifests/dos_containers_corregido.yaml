@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dos-containers
+spec:
+  containers:
+    - name: proxy
+      image: nginx
+    - name: busybox
+      image: busybox
+      command: ["/bin/sleep", "infinity"]
