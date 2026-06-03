@@ -74,9 +74,9 @@ pero es recomendable publicar en nuestro container registry los contendores que 
 
 ¿Qué puede ir mal?
 
-¿Y si no podemos acceeder al registry público?
-¿Y si el acceso es muy lento (hay thottling)?
-¿Y si el proveedor del contailer lo elimina?
+- ¿Y si no podemos acceeder al registry público?
+- ¿Y si el acceso es muy lento (hay thottling)?
+- ¿Y si el proveedor del contailer lo elimina?
 
 Todo esto nos lo podemos evitar copiando el contenedor a nuestro propio registry:
 
