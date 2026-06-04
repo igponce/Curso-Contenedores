@@ -73,3 +73,5 @@ Al exponer los puertos podemos acceder a los servicios desde fuera del...
 - [ X ] POD
 - [ ] Cluster
 
+# TODO: Servicios
+# TODO: Ingress
