@@ -54,12 +54,13 @@
 ## Kubernetes: configuración
 - [Volúmenes y almacenamiento](3140-kubernetes-volumes.md)
 - [Secrets y configuración](3200-kubernetes-secrets-configmaps.md)
+- [Aplicar cambios y escalado]()
 
 # Casos prácticos
 ## Creación de contenedores
 - [Repositorio de código Gitea](1510-gitea.md)
 - [Orquestador n8n](1520-n8n.md)
-  - [Ejercicio resuelto](ejercicios_resueltos/n8n/README.md)
+- [Ejercicio resuelto](ejercicios_resueltos/n8n/README.md)
 - [Servidor MCP](1500-servidor-mcp.md)
 
 # Kubernetes
