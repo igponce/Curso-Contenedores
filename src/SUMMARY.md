@@ -54,7 +54,8 @@
 ## Kubernetes: configuración
 - [Volúmenes y almacenamiento](3140-kubernetes-volumes.md)
 - [Secrets y configuración](3200-kubernetes-secrets-configmaps.md)
-- [Aplicar cambios y escalado]()
+- [Servicios y despliegues](3300-kubernetes-deployments.md)
+- [Ingress](3400-kubernetes-ingress.md)
 
 # Casos prácticos
 ## Creación de contenedores

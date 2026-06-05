@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: sleeper-rs
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: sleeper-APP
+  template:
+    metadata:
+      labels:
+        app: sleeper-APP
+    spec:
+      containers:
+        - name: busybox
+          image: busybox
+          command:
+            [
+              "sh",
+              "-c",
+              "while true; do echo '$(hostname) - $(date)'; sleep 13; done",
+            ]
