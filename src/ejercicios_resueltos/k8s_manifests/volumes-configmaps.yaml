@@ -6,6 +6,8 @@ data:
   log_level.conf: |
     # Podemos montar un configmap como volumen
     log_level=INFO
+    algo_que_me_invento=ESTO
+    otra_cosa=ESTO_TAMBIEN
 ---
 apiVersion: v1
 kind: Pod

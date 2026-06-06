@@ -73,5 +73,25 @@ Al exponer los puertos podemos acceder a los servicios desde fuera del...
 - [ X ] POD
 - [ ] Cluster
 
+# Servicios
+
+Necesitamos un servicio para exponer hacia fuera los puertos de los pods.
+Antes de exporerlo necesitamos saber cómo seleccionar los pods a los que queremos exponer.
+Un mismo puerto puede estar expuesto en diferentes pods.
+
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: fakewerver-svc
+spec:
+  selector:
+    app.kubernetes.io/name: 
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9376
+
 # TODO: Servicios
 # TODO: Ingress
