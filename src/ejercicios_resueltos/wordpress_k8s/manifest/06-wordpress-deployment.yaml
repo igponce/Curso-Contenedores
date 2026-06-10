@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wordpress
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: wordpress
+  template:
+    metadata:
+      labels:
+        app: wordpress
+    spec:
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchExpressions:
+                  - key: app
+                    operator: In
+                    values:
+                      - mariadb
+              topologyKey: kubernetes.io/hostname
+      containers:
+        - name: wordpress
+          image: wordpress:6.7-apache
+          ports:
+            - containerPort: 80
+              name: http
+          envFrom:
+            - configMapRef:
+                name: wordpress-config
+            - secretRef:
+                name: wordpress-secret
+          volumeMounts:
+            - name: wp-content
+              mountPath: /var/www/html/wp-content
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+          livenessProbe:
+            tcpSocket:
+              port: 80
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /wp-includes/images/wordpress.svg
+              port: 80
+            initialDelaySeconds: 15
+            periodSeconds: 5
+      volumes:
+        - name: wp-content
+          persistentVolumeClaim:
+            claimName: wordpress-pvc
