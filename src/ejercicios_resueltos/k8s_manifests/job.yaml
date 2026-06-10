@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: pull-google-page
+spec:
+  template:
+    spec:
+      containers:
+        - name: curlalpine
+          image: alpine/curl
+          command: ["curl", "https://www.google.com"]
+      restartPolicy: Never

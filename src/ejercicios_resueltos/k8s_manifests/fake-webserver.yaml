@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fake-webserver
+spec:
+  replicas: 10
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: fake-ws
+  template:
+    metadata:
+      labels:
+        app: fake-ws
+    spec:
+      containers:
+        - name: busybox
+          image: busybox
+          command:
+            [
+              "sh",
+              "-c",
+              " ( echo \"HTTP/1.0 200 OK\r\nConnection: close\r\nContent-type: Text-Plain\r\n\r\nHola son las $(date) $FOOTER \" ) | nc -l -p 9000",
+            ]
+          ports:
+            - containerPort: 9000
+          env:
+            - name: FOOTER
+              value: "\r\n--\r\n$Served by $(hostname)\r\n"
