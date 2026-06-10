@@ -3,7 +3,7 @@ kind: ReplicaSet
 metadata:
   name: sleeper-rs
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
       app: sleeper-APP
@@ -19,5 +19,5 @@ spec:
             [
               "sh",
               "-c",
-              "while true; do echo '$(hostname) - $(date)'; sleep 13; done",
+              "while true; do echo '$(hostname) - $(date)'; sleep 21; done",
             ]

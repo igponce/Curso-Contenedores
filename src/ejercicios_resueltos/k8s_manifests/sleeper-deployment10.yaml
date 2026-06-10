@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: busybox
-          image: busybox
+          image: busybox:1.32
           command:
             [
               "sh",
@@ -27,4 +27,4 @@ spec:
             ]
           env:
             - name: SLEEP_DURATION
-              value: "17"
+              value: "55"
